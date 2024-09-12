@@ -1,0 +1,30 @@
+compile = "lab2a.c"
+
+bandwidth = 56 Kbps
+
+minmessagesize   = 1000 bytes
+maxmessagesize   = 2000 bytes
+
+messagerate      = 300 ms
+propagationdelay = 1500 ms
+
+probframeloss    = 3
+probframecorrupt = 3
+
+host edmonton { x= 250, y= 250, address= 302,
+                link to calgary,
+                link to reddeer,
+                link to banff,
+                link to jasper }
+
+host calgary  { x= 250, y= 400, address= 351,
+                link to edmonton }
+
+host reddeer  { x= 400, y= 250, address= 402,
+                link to edmonton }
+
+host banff    { x= 250, y= 100, address= 453,
+                link to edmonton }
+
+host jasper   { x= 100, y= 250, address= 504,
+                link to edmonton }

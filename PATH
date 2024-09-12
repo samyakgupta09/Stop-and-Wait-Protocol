@@ -1,0 +1,19 @@
+compile          = "lab2b.c"
+
+bandwidth        = 56 Kbps
+
+minmessagesize   = 1000 bytes
+maxmessagesize   = 2000 bytes
+
+messagerate      = 300 ms
+propagationdelay = 1500 ms
+
+probframeloss    = 3
+probframecorrupt = 3
+
+host edmonton  { x= 50 , y= 50}
+host vancouver { x= 50 , y= 200}
+router router1 { x= 125, y= 125, link to edmonton, link to calgary, link to vancouver, link to toronto }
+router router2 { x= 125, y= 250, link to vancouver, link to toronto }
+host calgary   { x= 200, y= 50 }
+host toronto   { x= 200, y= 200}

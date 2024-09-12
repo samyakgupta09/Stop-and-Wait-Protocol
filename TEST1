@@ -1,0 +1,16 @@
+compile	         = "lab2a.c"
+
+bandwidth        = 56 Kbps
+
+minmessagesize   = 1000 bytes
+maxmessagesize   = 2000 bytes
+
+messagerate      = 300 ms
+propagationdelay = 1500 ms
+
+probframeloss	 = 2
+probframecorrupt = 2
+
+host edmonton  { x= 50 , y= 50, link to calgary }
+host calgary { x= 200, y= 50 } 
+
